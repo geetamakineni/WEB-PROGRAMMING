@@ -13,11 +13,7 @@ function getGithubInfo(user) {
                 console.log(xhr.status);
                 console.log(xhr.readyState);
             }
-            else{
-                noSuchUser(username)
-                console.log(xhr.status);
-                console.log(xhr.readyState);
-            }
+
         }
         xhr.open('GET', requri, true);
         xhr.send('');
@@ -36,10 +32,10 @@ function showUser(user,repouri) {
         
         if(fullname == undefined) { fullname = username; }
         
-        var outhtml = '<h2>'+fullname+' <span class="smallname">(@<a href="'+profileurl+'" target="_blank">'+username+'</a>)</span></h2>';
-        outhtml = outhtml + '<div class="ghcontent"><div class="avi"><a href="'+profileurl+'" target="_blank"><img src="'+aviurl+'" width="80" height="80" alt="'+username+'"></a></div>';
-        outhtml = outhtml + '<p>Followers: '+followersnum+' - Following: '+followingnum+'<br>Repos: '+reposnum+'</p></div>';
-        outhtml = outhtml + '<div class="repolist clearfix">';
+        var outhtml = '<h2>UserName:'+fullname+' <span class="smallname"><br>Profile link:<a href="'+profileurl+'" target="_blank">'+username+'</a>)</span></h2>';
+        outhtml = outhtml + '<div class="ghcontent"><br><div class="avi"><br><a href="'+profileurl+'" target="_blank"><img src="'+aviurl+'" width="80" height="80" alt="'+username+'"></a></div>';
+        outhtml = outhtml + '<br>Repos: '+reposnum+'</p></div>';
+
 
         var repositories;
         $.getJSON(repouri, function(json){
