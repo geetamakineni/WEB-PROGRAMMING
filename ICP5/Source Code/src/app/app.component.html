@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>TodoApp List</title>
+
+</head>
+<body style="background-color: deepskyblue;height:1300px">
+<br>
+<br>
+<div class="todos">
+
+  <div class="container">
+    <form #todoForm= "ngForm"(submit)="todoSubmit(todoForm.value); todoForm.resetForm()" >
+      <div class="form-group">
+        <h1 class="text-center ">TO DO TASKS</h1>
+        <div class="input-group-prepend">
+          <input type="text" #todo onfocus="this.value=''" class="form-control" placeholder="Add Your To do Task Here" name="todo" ngModel>
+          <span class="input-group-text" (click)="addTodo(todo.value)">
+    <i>+</i></span>
+        </div>
+      </div>
+      <div class="data">
+        <ul class="list-unstyled">
+          <li *ngFor="let todo of todoArray">{{todo}} <i (click)="deleteItem(todo)" >delete</i></li>
+        </ul>
+      </div>
+    </form>
+
+  </div>
+
+</div>
+
+<div >
+
+  <form [formGroup] = "formdata" (ngSubmit) = "onClickSubmit(formdata.value)" >
+    <h1 class="text-center ">EVENT COUNTER</h1>
+    <label for="date">date:</label><br>
+    <input type = "text" class = "text" name = "date" placeholder = "date" formControlName="date">
+    <br/>
+
+    <label for="date">month:</label><br>
+    <input type = "number" class = "number"  name = "month" placeholder = "Enter the month in number from 1-12" formControlName="month">
+
+    <br/>
+
+    <label for="date">year:</label><br>
+    <input type = "text" class = "text" name = "year" placeholder = "year" formControlName="year">
+
+    <br/>
+
+    <label for="date">hours:</label><br>
+    <input type = "text" class = "text" name = "hours" placeholder = "hours" formControlName="hours">
+
+    <br/>
+
+    <label for="date">mins:</label><br>
+    <input type = "text" class = "text" name = "min" placeholder = "min" formControlName="min">
+
+    <br/>
+
+    <label for="date">seconds:</label><br>
+    <input type = "text" class = "sec" name = "sec" placeholder = "sec" formControlName="sec">
+
+    <br/>
+
+    <input type = "submit" class = "forsubmit" value = "submit ">
+
+    <br>
+    <p align="center" style="font-size:30px;color:white;background-color:red;padding:30px;font-family:Roboto;">
+      {{this.days}} d {{this.hours}}hours {{this.minutes}}min {{this.seconds}}sec
+    </p>
+
+  </form>
+
+
+</div>
+
+</body>
+</html>
