@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5a894f26-4a8d-4285-aee8-68417b364b61" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="ProjectId" id="1eT1glsYAy5nc3y5F5QI22XZj4z" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../csee5590-master/csee5590-master/Mobile ICP2/Source/MyOrder" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5a894f26-4a8d-4285-aee8-68417b364b61" name="Default Changelist" comment="" />
+      <created>1594330881568</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594330881568</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="233" y="19" key="#Gradle" timestamp="1594343832616">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="233" y="19" key="#Gradle/0.0.1280.720@0.0.1280.720" timestamp="1594343832616" />
+    <state x="95" y="15" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594343913411">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="95" y="15" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1594343913411" />
+    <state x="421" y="115" key="FileChooserDialogImpl" timestamp="1594344167923">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1594344167923" />
+    <state x="142" y="3" key="SettingsEditor" timestamp="1594343774882">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="142" y="3" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1594343774882" />
+  </component>
+</project>

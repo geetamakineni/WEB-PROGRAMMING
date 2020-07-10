@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDC137"
+    android:gravity="center"
+    android:paddingLeft="30dp"
+    android:paddingTop="16dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="16dp"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/lblLogin"
+        android:layout_width="362dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:background="#174FBD"
+        android:gravity="center|center_horizontal"
+        android:text="Register"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        app:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/lblUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblLogin"
+        android:layout_marginTop="10dp"
+        android:text="Email"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold|italic"
+        app:fontFamily="sans-serif-medium" />
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblUsername" />
+
+    <TextView
+        android:id="@+id/lblUsernameError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtUsername"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorRed" />
+
+    <TextView
+        android:id="@+id/lblPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblUsernameError"
+        android:layout_marginTop="10dp"
+        android:text="Password"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        app:fontFamily="sans-serif-medium" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblPassword"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/lblPasswordError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPassword"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorRed" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblPasswordError"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorGreen"
+        android:onClick="register"
+        android:text="Register"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>
