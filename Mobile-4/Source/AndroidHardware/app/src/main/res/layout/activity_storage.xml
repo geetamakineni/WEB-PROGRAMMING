@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context="com.example.vijaya.androidhardware.StorageActivity">
+
+    <EditText
+        android:id="@+id/id_txt_mycontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginRight="-4dp"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="YOUR TEXT...."
+        android:inputType="textMultiLine"
+        android:textAlignment="viewStart"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/id_btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_txt_mycontent"
+        android:layout_marginTop="147dp"
+        android:background="#6E5D5D"
+        android:onClick="saveTofile"
+        android:text="SAVE YOUR DATA" />
+
+    <Button
+        android:id="@+id/id_btn_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_btn_save"
+        android:layout_alignStart="@+id/id_btn_save"
+        android:layout_alignLeft="@+id/id_btn_save"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="176dp"
+        android:background="#6E5D5D"
+        android:onClick="retrieveFromFile"
+        android:text="OPEN YOUR DATA" />
+
+    <EditText
+        android:id="@+id/id_txt_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_btn_display"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="65dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:visibility="invisible" />
+</RelativeLayout>
